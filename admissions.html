@@ -142,7 +142,8 @@
             <h6 class="section-title bg-white text-center text-primary px-3">Admission Criteria</h6>
             <h1 class="mb-5">Why Study at ATI?</h1>
         </div>
-        
+
+        <!-- Existing Content -->
         <div class="mb-5">
             <h3>Study at ATI</h3>
             <p>The admission process is done online. Applicants should go through the entry requirements before applying for the listed programs.</p>
@@ -165,8 +166,50 @@
             <p>Producing research that will help shape the world. We are eager to understand “what is out there?” What can be said with evidence about Leadership, ECDE, Theology, and Community Development? We also want to know “Why?” – Why is the situation as it is? This evidence opens the (applied science) question: “What can be done about it?” Neither theory nor research can tell us what to do, but good research can provide us with evidence for informed decisions for change.</p>
             <img src="img/research.jpg" alt="Research" class="img-fluid">
         </div>
+
+        <!-- Download and Preview Form Section -->
+        <div class="mb-5 text-center">
+            <h3>Application Form</h3>
+            <p class="mb-3">Start your application process by downloading or previewing the official form below:</p>
+            
+            <!-- Buttons -->
+            <div class="d-flex justify-content-center gap-3">
+                <!-- Download Button -->
+                <a href="form.pdf" download="ATI_Application_Form" class="btn btn-primary px-4 py-2">
+                    <i class="bi bi-download me-2"></i>Download Form
+                </a>
+
+                <!-- Preview Button -->
+                <button class="btn btn-outline-primary px-4 py-2" data-bs-toggle="modal" data-bs-target="#previewModal">
+                    <i class="bi bi-eye me-2"></i>Preview Form
+                </button>
+            </div>
+        </div>
+
+        <!-- Preview Modal -->
+        <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="previewModalLabel">Preview Application Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- PDF or DOC Viewer -->
+                        <iframe src="form.pdf" frameborder="0" class="w-100" style="height: 500px;"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="form.pdf" download="ATI_Application_Form" class="btn btn-primary">
+                            <i class="bi bi-download me-2"></i>Download Form
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 <!-- Admission Criteria Section End -->
 
 <!-- Consultancy Areas End -->
